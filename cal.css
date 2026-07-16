@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #eef6ff;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    height: auto;
+    width: 260px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 80px;
+    background-color: rgb(221, 240, 255);
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+
+.in {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.input {
+    width: 100%;
+    background-color: rgb(222, 255, 248);
+    height: 40px;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 50px 45px 45px 45px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-left: 10px;
+}
+
+button {
+    background-color: aliceblue;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+
+.hist0 {
+    grid-column: span 4;
+    margin-top: 10px;
+    border: 1px solid rgb(175, 161, 255);
+    background-color: white;
+    height: 120px;
+    overflow: scroll;
+    padding: 5px;
+}
+
+#hist_list {
+    margin: 0;
+    padding-left: 2px;
+}
+
+#hist_list li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#history,#Clear {
+    grid-column: span 2;
+}

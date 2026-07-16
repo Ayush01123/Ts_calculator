@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="in">
+
+            <input type="text" id="display" class="input">
+        </div>
+
+
+        <div class="buttons">
+            <button onclick="sin()">sin</button>
+            <button onclick="cos()">cos</button>
+            <button onclick="tan()">tan</button>
+            <button onclick="log()">log</button>
+
+            <button onclick="cosec()">cosec</button>
+            <button onclick="sec()">sec</button>
+            <button onclick="cot()">cot</button>
+            <button onclick="ln()">ln</button>
+
+            <button onclick="cle()">C</button>
+            <button onclick="del()">DE</button>
+            <button onclick="addOperator('%')">%</button>
+            <button onclick="addOperator('/')">/</button>
+
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button onclick="addOperator('*')">*</button>
+
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button onclick="addOperator('-')">-</button>
+
+
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button onclick="addOperator('+')">+</button>
+
+            <button onclick="add('0')">0</button>
+            <button onclick="add('(')">(</button>
+            <button onclick="add(')')">)</button>
+            <button onclick="calculate()">=</button>
+
+            <button id="history">History</button>
+            <div class="hist0 ">
+                <ul id="hist_list"></ul>
+            </div>  
+            <button onclick="clearHistory()" id="Clear">Clear History</button>
+        </div>
+    </div>
+
+    <script src="cal_ts.js">
+
+    </script>
+</body>
+
+</html>
